@@ -16,6 +16,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
+    "@cypress/vue": "^2.2.3",
+    "@cypress/webpack-dev-server": "^1.4.0",
     "@storybook/addon-actions": "^6.3.6",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
@@ -26,10 +28,12 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "chromatic": "^5.10.0-canary.0",
+    "cypress": "^8.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "vue-loader": "^15.9.7",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "webpack-dev-server": "^3.11.2"
   },
   "eslintConfig": {
     "root": true,
