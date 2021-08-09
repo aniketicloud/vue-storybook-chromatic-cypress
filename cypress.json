@@ -2,5 +2,9 @@
   "component": {
     "componentFolder": "src/stories",
     "testFiles": "**/*.spec.js"
-  }
+  },
+
+  "fixturesFolder": false,
+  "componentFolder": "src",
+  "testFiles": "**/*.spec.{js,ts,jsx,tsx}"
 }
