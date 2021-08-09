@@ -23,6 +23,7 @@ module.exports = (on, config) => {
 
     // Vue's Webpack configuration
     const webpackConfig = require('@vue/cli-service/webpack.config.js')
+    webpackConfig.resolve.alias["vue$"] = "vue/dist/vue.esm.js";
 
     on('dev-server:start', (options) =>
       startDevServer({ options, webpackConfig })
