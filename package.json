@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --open",
+    "serve": "vue-cli-service serve --open --port 8080",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=660520615e89"
+    "chromatic": "npx chromatic --project-token=660520615e89",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open",
+    "cy:open-ct": "cypress open-ct",
+    "cy:run-e2e": "start-server-and-test serve http://localhost:8080 cy:run"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -31,6 +35,7 @@
     "cypress": "^8.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "start-server-and-test": "^1.13.1",
     "vue-loader": "^15.9.7",
     "vue-template-compiler": "^2.6.11",
     "webpack-dev-server": "^3.11.2"
